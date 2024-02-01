@@ -8,9 +8,9 @@ def echo(text: str, repetitions: int = 3) -> str:
     print(text)
     #empty str to hold each echo effect
     echoing = ""
-    #starts with number of repetitions and counts down to 1 
+    #starts with number of repetitions, subtracts 1 each iteration until 0
     for i in range(repetitions, 0, -1):
-        #substring of original text, starting from the end of str, decreases with each iteration
+        #last 3 of text decreases with each iteration
         echoing += text[-i:] + "\n"
     return echoing
 
