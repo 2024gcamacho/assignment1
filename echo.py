@@ -1,5 +1,8 @@
-#text only takes str and 3 is the number of times we want to repeat... echo returns a str
+#echo.py
+#Guadalupe Camacho - CS:3980 SPR24
+
 def echo(text: str, repetitions: int = 3) -> str:
+    #text only takes str and 3 is the number of times we want to repeat... echo returns a str
     """Imitate a fading echo."""
     #print original input
     print(text)
@@ -8,9 +11,7 @@ def echo(text: str, repetitions: int = 3) -> str:
     #starts with number of repetitions and counts down to 1 
     for i in range(repetitions, 0, -1):
         #substring of original text, starting from the end of str, decreases with each iteration
-        fading = text[-i:] 
-        #adds each fade to each and appends new line 
-        echoing += fading + "\n"
+        echoing += text[-i:] + "\n"
     return echoing
 
 if __name__ == "__main__":
