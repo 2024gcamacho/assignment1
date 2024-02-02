@@ -20,7 +20,7 @@ def timer(func):
         return res
     return wrapper
 
-@lru_cache #using correctly?
+@lru_cache 
 #runs each time fib is run, timing execution
 @timer 
 #series of numbers where each number is the sum of the two preceding ones, starting with 0 and 1
