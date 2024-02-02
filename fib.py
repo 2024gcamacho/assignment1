@@ -26,7 +26,7 @@ def timer(func):
 #series of numbers where each number is the sum of the two preceding ones, starting with 0 and 1
 def fib(n: int) -> int:
         #base cases for recusion
-        if n <= 0:
+        if n == 0:
             return 0
         elif n == 1:
             return 1
